@@ -24,7 +24,7 @@
 
 #include "MarlinConfig.h"
 
-#define A4988               0x001A4988
+#define A4988               0x001
 #define DRV8825             0x002
 #define LV8729              0x003
 #define L6470               0x104
