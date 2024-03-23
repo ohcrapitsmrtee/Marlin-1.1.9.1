@@ -558,7 +558,7 @@
 
 // Enable this feature if all enabled endstop pins are interrupt-capable.
 // This will remove the need to poll the interrupt pins, saving many CPU cycles.
-#define ENDSTOP_INTERRUPTS_FEATURE
+//#define ENDSTOP_INTERRUPTS_FEATURE
 
 /**
  * Endstop Noise Filter
@@ -770,21 +770,12 @@
  *      O-- FRONT --+
  *    (0,0)
  *        校平位置   */
-<<<<<<< Updated upstream
-#define X_PROBE_OFFSET_FROM_EXTRUDER 30  // X offset: -left  +right  [of the nozzle]
-#define Y_PROBE_OFFSET_FROM_EXTRUDER -4  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle]
-
-// Certain types of probes need to stay away from edges
-#define MIN_PROBE_EDGE 20  //探针离边
-=======
 #define X_PROBE_OFFSET_FROM_EXTRUDER 10  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 10  // Y offset: -front +behind [the nozzle]
 #define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 50  //探针离边
->>>>>>> Stashed changes
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -814,13 +805,8 @@
  * Example: `M851 Z-5` with a CLEARANCE of 4  =>  9mm from bed to nozzle.
  *     But: `M851 Z+1` with a CLEARANCE of 2  =>  2mm from bed to nozzle.
  */
-<<<<<<< Updated upstream
-#define Z_CLEARANCE_DEPLOY_PROBE   15 //10// Z Clearance for Deploy/Stow
-#define Z_CLEARANCE_BETWEEN_PROBES  10//5 // Z Clearance between probe points
-=======
 #define Z_CLEARANCE_DEPLOY_PROBE   20 //10// Z Clearance for Deploy/Stow
 #define Z_CLEARANCE_BETWEEN_PROBES  20//5 // Z Clearance between probe points
->>>>>>> Stashed changes
 #define Z_CLEARANCE_MULTI_PROBE     5 // Z Clearance between multiple probes
 //#define Z_AFTER_PROBING           5 // Z position after probing is done
 
@@ -1931,11 +1917,7 @@
  * Set this manually if there are extra servos needing manual control.
  * Leave undefined or set to 0 to entirely disable the servo subsystem.
  */
-<<<<<<< Updated upstream
-#define NUM_SERVOS 3 // Servo index starts with 0 for M280 command
-=======
 //#define NUM_SERVOS 3 // Servo index starts with 0 for M280 command
->>>>>>> Stashed changes
 
 // Delay (in milliseconds) before the next move will start, to give the servo time to reach its target angle.
 // 300ms is a good value but you can try less delay.
